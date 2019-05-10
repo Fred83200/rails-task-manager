@@ -1,0 +1,19 @@
+<div class="container">
+  <div>
+
+<h1>Task displayer</h1>
+<div id="link">
+<% @tasks.each do |task| %>
+<h2><%= link_to task.title, task_path(task) %></h2>
+<% if task.completed %>
+<p>Task Complete ! 👍</p>
+<% else %>
+<p>Task incomplete 👎</p>
+<% end %>
+<% end %>
+<button class="create_butt">
+<%= link_to "Create task", new_task_path %>
+</button>
+</div>
+</div>
+</div>

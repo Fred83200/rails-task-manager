@@ -1,0 +1,47 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$red_but: #D00000;
+$wild_blue: #A2AEBB;
+$trolley: #7C7C7C;
+$light_green: #8FE388;
+$malachite: #6EEB83;
+
+html {
+  background: $trolley;
+}
+
+h1 {
+  font-family: helvetica;
+  color: $light_green
+}
+
+a {
+  color: $light_green
+}
+
+a:hover {
+  color: $wild_blue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#link {
+  text-align: center;
+}
+
+.create_butt {
+  background-color: $light_green;
+  border-color: $light_green;
+}
+
+.create_butt a {
+  color: $wild_blue;
+}
+
+.create_butt:hover {
+  background-color: $malachite;
+}
